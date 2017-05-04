@@ -307,8 +307,9 @@ public class home extends javax.swing.JFrame {
     }//GEN-LAST:event_keluarActionPerformed
 
     private void cariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariActionPerformed
-        ctoko.CariKategori();
         ctoko.isiTable();
+        ctoko.CariKategori();
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_cariActionPerformed
 
