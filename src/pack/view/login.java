@@ -45,6 +45,8 @@ public class login extends javax.swing.JFrame {
         signin = new javax.swing.JButton();
         signup = new javax.swing.JButton();
         exit = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -64,6 +66,7 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(password);
         password.setBounds(100, 140, 160, 30);
 
+        signin.setBackground(new java.awt.Color(255, 255, 255));
         signin.setText("Sign In");
         signin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +76,7 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(signin);
         signin.setBounds(90, 200, 190, 30);
 
+        signup.setBackground(new java.awt.Color(255, 255, 255));
         signup.setText("Sign Up");
         signup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,6 +86,7 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(signup);
         signup.setBounds(40, 250, 110, 30);
 
+        exit.setBackground(new java.awt.Color(255, 255, 255));
         exit.setText("Exit");
         exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,6 +95,14 @@ public class login extends javax.swing.JFrame {
         });
         getContentPane().add(exit);
         exit.setBounds(230, 250, 110, 30);
+
+        jPanel1.setBackground(new java.awt.Color(102, 255, 102));
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 390, 190);
+
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, 190, 390, 110);
 
         setBounds(0, 0, 405, 339);
     }// </editor-fold>//GEN-END:initComponents
@@ -198,6 +211,8 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JButton exit;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField password;
     private javax.swing.JButton signin;
     private javax.swing.JButton signup;

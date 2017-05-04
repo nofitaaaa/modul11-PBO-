@@ -130,6 +130,9 @@ public class home extends javax.swing.JFrame {
         cari = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabel = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -159,7 +162,7 @@ public class home extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel4.setText("Pencarian Berdasarkan Kategori");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(90, 370, 260, 30);
+        jLabel4.setBounds(110, 370, 260, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel5.setText("Nama Barang");
@@ -182,6 +185,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(barang);
         barang.setBounds(200, 160, 320, 30);
 
+        cbcari.setBackground(new java.awt.Color(102, 255, 102));
         cbcari.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Baranglain" }));
         getContentPane().add(cbcari);
         cbcari.setBounds(390, 370, 140, 30);
@@ -190,6 +194,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(cbjenis);
         cbjenis.setBounds(200, 260, 320, 30);
 
+        keluar.setBackground(new java.awt.Color(255, 255, 255));
         keluar.setText("Keluar");
         keluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -197,8 +202,9 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(keluar);
-        keluar.setBounds(640, 300, 170, 30);
+        keluar.setBounds(640, 310, 170, 30);
 
+        simpan.setBackground(new java.awt.Color(255, 255, 255));
         simpan.setText("Simpan");
         simpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,8 +212,9 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(simpan);
-        simpan.setBounds(640, 100, 170, 30);
+        simpan.setBounds(640, 110, 170, 30);
 
+        ubah.setBackground(new java.awt.Color(255, 255, 255));
         ubah.setText("Ubah");
         ubah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -215,8 +222,9 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ubah);
-        ubah.setBounds(640, 150, 170, 30);
+        ubah.setBounds(640, 160, 170, 30);
 
+        bersihkan.setBackground(new java.awt.Color(255, 255, 255));
         bersihkan.setText("Bersihkan");
         bersihkan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,8 +232,9 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(bersihkan);
-        bersihkan.setBounds(640, 200, 170, 30);
+        bersihkan.setBounds(640, 210, 170, 30);
 
+        hapus.setBackground(new java.awt.Color(255, 255, 255));
         hapus.setText("Hapus");
         hapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,7 +242,7 @@ public class home extends javax.swing.JFrame {
             }
         });
         getContentPane().add(hapus);
-        hapus.setBounds(640, 250, 170, 30);
+        hapus.setBounds(640, 260, 170, 30);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel8.setText("Kode Barang");
@@ -244,6 +253,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(cbkategori);
         cbkategori.setBounds(200, 210, 320, 30);
 
+        cari.setBackground(new java.awt.Color(102, 255, 102));
         cari.setText("Cari");
         cari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -255,6 +265,11 @@ public class home extends javax.swing.JFrame {
 
         tabel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
                 {null, null, null, null, null},
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -274,6 +289,18 @@ public class home extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(40, 410, 780, 200);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 850, 90);
+
+        jPanel2.setBackground(new java.awt.Color(51, 255, 102));
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, 90, 850, 270);
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(jPanel4);
+        jPanel4.setBounds(0, 360, 850, 260);
 
         setBounds(0, 0, 863, 657);
     }// </editor-fold>//GEN-END:initComponents
@@ -377,6 +404,9 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton keluar;
     private javax.swing.JTextField kode;
